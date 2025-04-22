@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us</title>
+
+  <!-- Bootstrap 4 CSS CDN -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+
+.logo{
+            height: 40px;
+            width: 40px;
+        }
+    .parallax-section {
+      background-image: url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 5px #000;
+      padding: 40px 0;
+    }
+
+    .parallax-section .container {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      padding: 20px;
+    }
+
+    .feature-card {
+      background: white;
+      color: #333;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      height: 100%;
+    }
+
+    .feature-card h5 {
+      font-weight: bold;
+    }
+
+    .extra-section {
+      padding: 50px 20px;
+      background: #f8f9fa;
+      text-align: center;
+    }
+    @media only screen and (max-width: 768px) {
+
+*{
+    font-size: small;
+}
+
+
+.dropdown-menu {
+left: auto !important;
+right: 0 !important;
+}
+
+}
+    
+ 
+  </style>
+</head>
+<body>
+
+    <!--navbar-->
+    <nav class="navbar  border-bottom">
+        <a class="navbar-brand d-none d-md-block" href="">
+         <img class="logo " src="online-education-logo.jpg" alt="">
+        </a>
+ 
+        <li class="nav-item d-block d-md-none mr-auto">
+         <a  href="">
+             <img class="logo " src="online-education-logo.jpg" alt="">
+         </a>
+        </li>
+ 
+ 
+         <ul class="navbar nav ml-auto">
+             
+             <li class="nav-item">
+                 <a class="nav-link" href="landing_page.html">home</a>
+             </li>
+             <li class="nav-item ml-md-2">
+                 <a class="nav-link" href="">learning</a>
+             </li>
+             <li class="nav-item d-none d-md-block">
+                 <a class="nav-link" href="">quiz</a>
+             </li>
+             <li class="nav-item d-none d-md-block">
+                 <a class="nav-link active text-danger" href="">about</a>
+             </li>
+             <li class="nav-item d-none d-md-block">
+                 <a class="nav-link" href="feedback_page.html">feedback</a>
+             </li>
+             <li class="nav-item dropdown d-md-none">
+                 <span class="dropdown-toggle" data-toggle="dropdown" style="cursor: pointer;">explore</span>
+                 <div class="dropdown-menu">
+                     <a class="dropdown-item " href="#">quiz</a>
+                     <a class="dropdown-item active text-danger bg-light" href="#">about</a>
+                     <a class="dropdown-item " href="feedback_page.html">feedback</a>
+                   </div>
+             </li>
+            
+         </ul>
+ 
+         
+     </nav>
+
+  <!-- Parallax About Section -->
+  <section class="parallax-section">
+    <div class="container text-center">
+      <h2 class="mb-4">About Us</h2>
+      <p class="lead mb-5">
+        We make learning fun! <strong>Joyful Learners</strong> offers interactive content for kids — through Activities, Quizzes, and Rhymes.
+      </p>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="feature-card p-4">
+            <h5>Activities</h5>
+            <p>Fun tasks to spark creativity and motor skills.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="feature-card p-4">
+            <h5>Quiz</h5>
+            <p>Brain boosting quizzes for smart kids!</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="feature-card p-4">
+            <h5>Rhymes</h5>
+            <p>Catchy tunes to learn language with joy!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extra Section to Enable Scroll -->
+  <section class="py-2 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+      <div id="faqAccordion">
+  
+        <!-- FAQ 1 -->
+        <div class="card mb-3">
+          <div class="card-header" id="faqOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne">
+                What is Joyful Learners?
+              </button>
+            </h5>
+          </div>
+  
+          <div id="collapseOne" class="collapse" data-parent="#faqAccordion">
+            <div class="card-body">
+              Joyful Learners is a fun & interactive learning platform for kids.
+  
+              <!-- Answer Form -->
+              <form class="answer-form mt-3">
+                <textarea class="form-control mb-2" placeholder="Write your answer..."></textarea>
+                <button type="submit" class="btn btn-primary">Submit Answer</button>
+              </form>
+            </div>
+          </div>
+        </div>
+  
+        <!-- FAQ 2 -->
+        <div class="card mb-3">
+          <div class="card-header" id="faqTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo">
+                Can I use it offline?
+              </button>
+            </h5>
+          </div>
+  
+          <div id="collapseTwo" class="collapse" data-parent="#faqAccordion">
+            <div class="card-body">
+              Some content is available offline, but internet is needed for full access.
+  
+              <!-- Answer Form -->
+              <form class="answer-form mt-3">
+                <textarea class="form-control mb-2" placeholder="Write your answer..."></textarea>
+                <button type="submit" class="btn btn-primary">Submit Answer</button>
+              </form>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+
+
+     
+
+
+    </div>
+
+
+    <div class="text-center">
+        <p class="mb-0">&copy; 2025 KidsLearn. All rights reserved.</p>
+      </div>
+  </section>
+  
+  
+  <script>
+    document.querySelectorAll('.answer-form').forEach(function(form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        form.style.display = 'none';
+      });
+    });
+  </script>
+  
+</body>
+</html>
